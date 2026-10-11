@@ -1,0 +1,23 @@
+{
+  "rubric_file": "examples/support-rubric.json",
+  "state_dir": ".data",
+  "zoom": {
+    "users": [
+      {
+        "user_id": "REPLACE_ZOOM_USER_ID",
+        "subject_speaker": "Agent"
+      }
+    ],
+    "lookback_days": 7,
+    "max_transcripts_per_run": 10
+  },
+  "openai": {
+    "model": "gpt-4.1-mini",
+    "max_output_tokens": 12000
+  },
+  "google": {
+    "spreadsheet_id": "REPLACE_SPREADSHEET_ID",
+    "sheet_tab": "AI Draft",
+    "reports_folder_id": "REPLACE_REPORTS_FOLDER_ID"
+  }
+}

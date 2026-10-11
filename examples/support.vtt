@@ -1,0 +1,25 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.000
+Customer: My order confirmation arrived, but I can’t find the tracking link.
+
+2
+00:00:05.000 --> 00:00:12.000
+Agent: Do you see an order number in the email? I want to confirm that the missing item is the tracking link, not the confirmation itself.
+
+3
+00:00:12.000 --> 00:00:16.000
+Customer: Yes, the order number is SYNTH-104. The confirmation is fine.
+
+4
+00:00:16.000 --> 00:00:25.000
+Agent: Please open the order page and select “Delivery details”. If a tracking link has been assigned, it will appear there. If it is still missing, reply to this support conversation and we can check the delivery status.
+
+5
+00:00:25.000 --> 00:00:29.000
+Customer: I see the link now. That answers my question, thank you.
+
+6
+00:00:29.000 --> 00:00:32.000
+Agent: You’re welcome. Let us know here if you need another check.

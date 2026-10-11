@@ -1,0 +1,38 @@
+{
+  "criteria": [
+    {
+      "criterion_id": "clarify",
+      "label_id": "clear",
+      "needs_human": false,
+      "reason": "The synthetic subject asks about the order number and explicitly distinguishes the missing tracking link from the confirmation email. A reviewer should decide whether this meets their intended clarification standard.",
+      "evidence": [
+        { "turn_id": "t2", "quote": "Do you see an order number in the email? I want to confirm that the missing item is the tracking link, not the confirmation itself." }
+      ]
+    },
+    {
+      "criterion_id": "next_step",
+      "label_id": "clear",
+      "needs_human": false,
+      "reason": "The subject gives a specific navigation step, a conditional expected outcome and a fallback. The transcript does not establish whether the described product behavior is factually correct.",
+      "evidence": [
+        { "turn_id": "t4", "quote": "Please open the order page and select “Delivery details”. If a tracking link has been assigned, it will appear there. If it is still missing, reply to this support conversation and we can check the delivery status." }
+      ]
+    },
+    {
+      "criterion_id": "confirmation",
+      "label_id": "confirmed",
+      "needs_human": false,
+      "reason": "The synthetic customer explicitly says the link is visible and that their question is answered. This is a conversation outcome, not independent proof of employee performance.",
+      "evidence": [
+        { "turn_id": "t5", "quote": "I see the link now. That answers my question, thank you." }
+      ]
+    },
+    {
+      "criterion_id": "visual_attention",
+      "label_id": null,
+      "needs_human": false,
+      "reason": "The supplied source is a transcript and contains no eligible visual observation.",
+      "evidence": []
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "support-coaching",
+  "version": "1.0.0",
+  "title": "Synthetic customer support coaching rubric",
+  "criteria": [
+    {
+      "id": "clarify",
+      "title": "Clarifies the customer's problem",
+      "description": "The subject asks a relevant question to distinguish the reported problem and confirms what needs to be resolved.",
+      "observable": true,
+      "evidence_scope": "subject",
+      "labels": [
+        { "id": "missing", "description": "The quoted behavior does not clarify the problem.", "points": 0 },
+        { "id": "partial", "description": "Asks a relevant clarifying question without confirming the problem.", "points": 1 },
+        { "id": "clear", "description": "Asks a relevant question and confirms the customer's problem.", "points": 2 }
+      ]
+    },
+    {
+      "id": "next_step",
+      "title": "Gives a concrete next step",
+      "description": "The subject gives a practical next step and tells the customer what outcome to expect, without promising facts not established in the conversation.",
+      "observable": true,
+      "evidence_scope": "subject",
+      "labels": [
+        { "id": "missing", "description": "The quoted behavior gives no practical next step.", "points": 0 },
+        { "id": "partial", "description": "A next step is given but the expected outcome is unclear.", "points": 1 },
+        { "id": "clear", "description": "A concrete next step and expected outcome are stated.", "points": 2 }
+      ]
+    },
+    {
+      "id": "confirmation",
+      "title": "Customer confirms the proposed resolution",
+      "description": "The conversation contains an explicit customer confirmation that the stated next step resolves or addresses the reported problem. This is a conversation outcome and must not be attributed solely to the subject.",
+      "observable": true,
+      "evidence_scope": "conversation",
+      "labels": [
+        { "id": "unclear", "description": "The quoted customer response is ambiguous or does not confirm resolution.", "points": 0 },
+        { "id": "confirmed", "description": "The customer explicitly confirms the resolution or proposed next step.", "points": 1 }
+      ]
+    },
+    {
+      "id": "visual_attention",
+      "title": "Visual attention",
+      "description": "Whether the subject maintains visual attention requires video or an authorized observer and cannot be evaluated from this transcript.",
+      "observable": false,
+      "evidence_scope": "subject",
+      "labels": [
+        { "id": "not_demonstrated", "description": "The authorized visual observation shows missing visual attention.", "points": 0 },
+        { "id": "demonstrated", "description": "The authorized visual observation shows sustained visual attention.", "points": 1 }
+      ]
+    }
+  ]
+}
