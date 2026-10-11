@@ -6,7 +6,7 @@
 
 Define your conversation review criteria. Get an AI draft with checked transcript excerpts, code-calculated points, separate coverage, and a Google report and Sheet row.
 
-**Evidence QA v1 is a $39 one-time paid technical source kit.** This public repository contains documentation, fictional examples, and a synthetic report preview. The implementation is delivered in the purchased ZIP; runtime scripts, tests, the setup skill, and the n8n workflow are not included here. No client conversations, account identifiers, credentials, or historical client outcomes are included.
+**Evidence QA v1 is a $59 one-time paid technical source kit.** This public repository contains documentation, fictional examples, and a synthetic report preview. The implementation is delivered in the purchased ZIP; runtime scripts, tests, the setup skill, and the n8n workflow are not included here. No client conversations, account identifiers, credentials, or historical client outcomes are included.
 
 The paid Agensi listing link will be added after its publication is verified.
 
