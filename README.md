@@ -8,7 +8,7 @@ Define your conversation review criteria. Get an AI draft with checked transcrip
 
 **Evidence QA v1 is a $59 one-time paid technical source kit.** This public repository contains documentation, fictional examples, and a synthetic report preview. The implementation is delivered in the purchased ZIP; runtime scripts, tests, the setup skill, and the n8n workflow are not included here. No client conversations, account identifiers, credentials, or historical client outcomes are included.
 
-The paid Agensi listing link will be added after its publication is verified.
+Submitted to Agensi on 11 October 2026 at **$59 one-time**. Marketplace status: **Pending Review**; publication is not yet confirmed. The purchase link will be added after approval.
 
 ### The outcome you buy
 
