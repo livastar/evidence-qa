@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="260" viewBox="0 0 1000 260" role="img" aria-labelledby="lockup-title lockup-desc">
+  <title id="lockup-title">Evidence QA</title>
+  <desc id="lockup-desc">Evidence QA — Conversation reviews with checked quotes. Paired quotation forms trace to a verification tail beside the navy wordmark. Transparent background. Use the white view fragment for the white variant.</desc>
+  <defs>
+    <g id="quotation-forms">
+      <path d="M72 104h152v152h-80v96H72Z"/>
+      <path d="M272 104h152v152h-80v64h-72Z"/>
+    </g>
+    <path id="verification-tail" d="m252 326 40-40 48 48 84-92 40 40-122 132Z"/>
+  </defs>
+  <view id="white" viewBox="1000 0 1000 260"/>
+  <g id="color-lockup">
+    <g transform="translate(4 10) scale(.46)">
+      <use href="#quotation-forms" fill="#17324D"/>
+      <use href="#verification-tail" fill="#087F8C"/>
+    </g>
+    <text x="258" y="130" fill="#17324D" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="76" font-weight="700" letter-spacing="-2.5">Evidence QA</text>
+    <text x="262" y="181" fill="#087F8C" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="25" font-weight="500" letter-spacing=".05">Conversation reviews with checked quotes</text>
+  </g>
+  <g id="white-lockup" transform="translate(1000 0)" aria-hidden="true">
+    <g transform="translate(4 10) scale(.46)" fill="#FFFFFF">
+      <use href="#quotation-forms"/>
+      <use href="#verification-tail"/>
+    </g>
+    <text x="258" y="130" fill="#FFFFFF" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="76" font-weight="700" letter-spacing="-2.5">Evidence QA</text>
+    <text x="262" y="181" fill="#FFFFFF" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="25" font-weight="500" letter-spacing=".05">Conversation reviews with checked quotes</text>
+  </g>
+</svg>

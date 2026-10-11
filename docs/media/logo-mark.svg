@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="logo-title logo-desc">
+  <title id="logo-title">Evidence QA quote provenance mark</title>
+  <desc id="logo-desc">Two geometric quotation forms end in a teal verification tail. The paired excerpts represent conversation evidence; the closing check represents checked provenance. Transparent background. Use the white view fragment for a single-color white variant.</desc>
+  <defs>
+    <g id="quotation-forms">
+      <path d="M72 104h152v152h-80v96H72Z"/>
+      <path d="M272 104h152v152h-80v64h-72Z"/>
+    </g>
+    <path id="verification-tail" d="m252 326 40-40 48 48 84-92 40 40-122 132Z"/>
+  </defs>
+  <view id="white" viewBox="512 0 512 512"/>
+  <g id="color-mark">
+    <use href="#quotation-forms" fill="#17324D"/>
+    <use href="#verification-tail" fill="#087F8C"/>
+  </g>
+  <g id="white-mark" transform="translate(512 0)" aria-hidden="true">
+    <use href="#quotation-forms" fill="#FFFFFF"/>
+    <use href="#verification-tail" fill="#FFFFFF"/>
+  </g>
+</svg>

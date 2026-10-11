@@ -1,0 +1,85 @@
+{
+  "release": "1.0.1",
+  "data": "fictional support example",
+  "preview": "illustrated v1 process, not a live provider run",
+  "animation": {
+    "file": "workflow-process.gif",
+    "width": 1280,
+    "height": 720,
+    "frames": 8,
+    "duration_ms": 36000,
+    "repeat": "single pass"
+  },
+  "assets": [
+    {
+      "file": "logo-lockup.jpg",
+      "bytes": 4928,
+      "sha256": "2dfbd34b0e753b5daa2eed6ce0730bf8593179f092519009215c6d49098a31da"
+    },
+    {
+      "file": "logo-lockup.svg",
+      "bytes": 1874,
+      "sha256": "b5f643fbb36257284dd2c2000433402c1c44c5f303a942e24af3bdbe2a2dc362"
+    },
+    {
+      "file": "logo-mark.jpg",
+      "bytes": 6693,
+      "sha256": "75f75942cad2318d2938f050217599ae960c432a8acf705f79c38cc29b94104c"
+    },
+    {
+      "file": "logo-mark.svg",
+      "bytes": 1078,
+      "sha256": "795a607dc5f489a11b0a5686ac8a2a62113106dac15f47b5c1509b7eb3502221"
+    },
+    {
+      "file": "logo-preview.html",
+      "bytes": 1710,
+      "sha256": "46aab5ef3700e70aa68026dcf3884e22e743e866d9a40a75e2f28510069ae309"
+    },
+    {
+      "file": "workflow-business-map.jpg",
+      "bytes": 108130,
+      "sha256": "9ec4a641bb684a22d842f1d13bd70ef915bb6f3a2b21ac88464fd7c38fb5aa8c"
+    },
+    {
+      "file": "workflow-evidence.jpg",
+      "bytes": 99394,
+      "sha256": "6e91d3e0732ac75eb06885eb80781078b4a0625ff583bf5056411b0e42de949f"
+    },
+    {
+      "file": "workflow-mobile.jpg",
+      "bytes": 71597,
+      "sha256": "67b5ef4db10600032938e3727f63da419a77e5bf8b9c611fcb291ed03724f08e"
+    },
+    {
+      "file": "workflow-overview.jpg",
+      "bytes": 66362,
+      "sha256": "1d2912c545f163cfe49f203a13d15f3963b8186fe39f55862b8865dd9773a6fe"
+    },
+    {
+      "file": "workflow-process.gif",
+      "bytes": 957003,
+      "sha256": "3a6d5257e00df8c8b101a67923668a226c5a934333c4339b5ea0e3e1105dfcd5"
+    },
+    {
+      "file": "workflow-recovery.jpg",
+      "bytes": 91635,
+      "sha256": "8c5f0746fe7ec352136ea18f2153960df05d9217694bff5e1ed674792e31a7a1"
+    },
+    {
+      "file": "workflow.css",
+      "bytes": 33527,
+      "sha256": "0c6367936b2220f160504a04ea599d4a035fe97937060c74b7a709b45b087681"
+    },
+    {
+      "file": "workflow.html",
+      "bytes": 12792,
+      "sha256": "e7be7608b36212f11e8ca2d12ed8dcf7f99399a991b24741f88fc6d7b71fdb7c"
+    },
+    {
+      "file": "workflow.js",
+      "bytes": 14022,
+      "sha256": "9b48e9a6e469f41fb64b0dde3b0d956f00c2c4ac755b56b030c8b4160bbd30a7"
+    }
+  ]
+}

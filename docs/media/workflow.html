@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Evidence QA v1 · Illustrated process</title>
+  <meta name="description" content="An offline illustrated walkthrough of Evidence QA v1, from a custom rubric to a human-reviewed conversation QA draft.">
+  <link rel="stylesheet" href="./workflow.css">
+  <script src="./workflow.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="masthead">
+      <a class="brand" href="#main">
+        <span class="brand-symbol" aria-hidden="true"><img src="./logo-mark.svg" alt=""><span class="logo-fallback">E<span>✓</span></span></span>
+        <span>Evidence QA<span class="brand-version">v1</span></span>
+      </a>
+      <p class="edition-note"><span class="status-dot" aria-hidden="true"></span>Illustrated v1 process</p>
+    </header>
+
+    <main id="main">
+      <section class="intro" aria-labelledby="page-title">
+        <div><h1 id="page-title">An evidence trail.<br>A reviewable draft.</h1><p class="intro-copy">Your criteria. An explicit speaker. Checked quotations and code-calculated points, carried through to a draft for human review.</p></div>
+        <div class="intro-note"><span class="note-stroke" aria-hidden="true"></span><p>This is a process explainer.<br>The v1 kit runs in your environment.</p><span class="sample-label">Synthetic support example</span></div>
+      </section>
+
+      <div class="view-nav" role="tablist" aria-label="Process views">
+        <button type="button" id="tab-overview" role="tab" aria-selected="true" aria-controls="view-overview" data-view="overview">Overview</button>
+        <button type="button" id="tab-evidence" role="tab" aria-selected="false" aria-controls="view-evidence" tabindex="-1" data-view="evidence">Evidence</button>
+        <button type="button" id="tab-recovery" role="tab" aria-selected="false" aria-controls="view-recovery" tabindex="-1" data-view="recovery">Recovery</button>
+        <button type="button" id="tab-business" role="tab" aria-selected="false" aria-controls="view-business" tabindex="-1" data-view="business">Business map</button>
+      </div>
+
+      <section id="view-overview" class="view-panel" role="tabpanel" aria-labelledby="tab-overview">
+        <div class="walkthrough-stage">
+          <div class="stage-copy">
+            <p class="step-count" id="step-count">Step 1 of 8</p>
+            <h2 id="stage-title">Define what counts.</h2>
+            <p id="stage-description">Supply a rubric with observable criteria and label points. Name the exact speaker to assess; the kit does not infer identity.</p>
+            <p class="stage-contract" id="stage-contract">Rubric + explicit subject speaker</p>
+            <div class="playback" aria-label="Walkthrough controls">
+              <button type="button" class="primary-button" id="play-button"><span aria-hidden="true">▶</span> Play</button>
+              <button type="button" class="text-button" id="restart-button">Restart</button>
+            </div>
+            <label class="frame-toggle"><input type="checkbox" id="frame-mode">Animation frames</label>
+            <p class="motion-note" id="motion-note">Starts paused. Choose any step below.</p>
+          </div>
+          <div class="artifact-stage" id="artifact-stage" aria-label="Illustration of the selected step">
+            <div class="rubric-paper paper"><div class="paper-heading"><span class="document-tab">Rubric</span><span>1.0.0</span></div><h3>support-coaching</h3><div class="criterion-line"><span>Clarify the problem</span><b>0 · 1 · 2</b></div><div class="criterion-line"><span>Give a next step</span><b>0 · 1 · 2</b></div><div class="criterion-line"><span>Customer confirmation</span><b>0 · 1</b></div><div class="criterion-line muted-line"><span>Visual attention</span><b>Unscored</b></div><p class="paper-footnote">Visual behavior is outside transcript evidence.</p></div><div class="speaker-ticket"><span>Subject speaker</span><strong>Agent</strong><span>Exact label required</span></div>
+          </div>
+        </div>
+
+        <div class="trail-wrap">
+          <p class="trail-caption">The evidence stays attached.</p>
+          <div class="trail" id="trail" aria-label="Select a walkthrough step">
+            <div class="trail-line" aria-hidden="true"><span id="trail-progress"></span></div>
+            <button type="button" class="trail-stop" data-step="0" aria-current="step"><span class="stop-number">1</span><span class="stop-label">Rubric<br>+ speaker</span></button>
+            <button type="button" class="trail-stop" data-step="1"><span class="stop-number">2</span><span class="stop-label">Eligible<br>transcript</span></button>
+            <button type="button" class="trail-stop" data-step="2"><span class="stop-number">3</span><span class="stop-label">OpenAI<br>draft</span></button>
+            <button type="button" class="trail-stop" data-step="3"><span class="stop-number">4</span><span class="stop-label">Quote +<br>speaker checks</span></button>
+            <button type="button" class="trail-stop" data-step="4"><span class="stop-number">5</span><span class="stop-label">Labels +<br>point checks</span></button>
+            <button type="button" class="trail-stop" data-step="5"><span class="stop-number">6</span><span class="stop-label">Saved<br>assessment</span></button>
+            <button type="button" class="trail-stop" data-step="6"><span class="stop-number">7</span><span class="stop-label">Google Doc<br>+ Sheet draft</span></button>
+            <button type="button" class="trail-stop" data-step="7"><span class="stop-number">8</span><span class="stop-label">Human<br>review</span></button>
+          </div>
+          <div class="resume-note"><span aria-hidden="true">↳</span> A matching saved assessment can resume publication without another model call.</div>
+        </div>
+      </section>
+
+      <section id="view-evidence" class="view-panel alternate-panel" role="tabpanel" aria-labelledby="tab-evidence" hidden>
+        <div class="panel-heading"><div><p class="section-kicker">Synthetic example</p><h2>Read the quotation.<br>Review the judgment.</h2></div><p>Code checks where an excerpt came from and whether it belongs to the required speaker. A reviewer still decides whether the proposed label fits the criterion.</p></div>
+        <div class="evidence-layout">
+          <div class="quote-ledger">
+            <article class="evidence-entry"><div class="entry-top"><span class="turn-token">t2</span><span>Agent</span><span class="checked-tag">Exact excerpt</span></div><blockquote>“Do you see an order number in the email? I want to confirm that the missing item is the tracking link, not the confirmation itself.”</blockquote><p>Clarifies the problem <span class="entry-result">clear · 2 / 2</span></p></article>
+            <article class="evidence-entry"><div class="entry-top"><span class="turn-token">t4</span><span>Agent</span><span class="checked-tag">Exact excerpt</span></div><blockquote>Please open the order page and select “Delivery details”.</blockquote><p>Gives a concrete next step <span class="entry-result">clear · 2 / 2</span></p></article>
+            <article class="evidence-entry"><div class="entry-top"><span class="turn-token">t5</span><span>Customer</span><span class="scope-tag">Conversation scope</span></div><blockquote>“I see the link now. That answers my question, thank you.”</blockquote><p>Customer confirmation <span class="entry-result">confirmed · 1 / 1</span></p></article>
+          </div>
+          <aside class="evidence-summary"><p class="document-tab">Draft result</p><h3>support-coaching<span>1.0.0</span></h3><div class="summary-number">5 <span>/ 5</span></div><p>Points on assessed criteria</p><div class="coverage-rule"><span style="width:83.33%"></span></div><strong class="coverage-value">83.33% evidence coverage</strong><p class="summary-detail">5 of 6 possible rubric points are covered.<br>3 of 4 criteria are scored.</p><div class="unscored-note"><span aria-hidden="true">◌</span><div><strong>Visual attention: unscored</strong><p>A transcript cannot establish visual behavior.</p></div></div><p class="summary-footer">All outputs remain drafts.<br>Exact quotations do not establish semantic label accuracy.</p></aside>
+        </div>
+      </section>
+
+      <section id="view-recovery" class="view-panel alternate-panel" role="tabpanel" aria-labelledby="tab-recovery" hidden>
+        <div class="panel-heading"><div><p class="section-kicker">Resume the output step</p><h2>A saved draft is<br>a restart point.</h2></div><p>If publication is interrupted after a validated assessment is saved, a matching retry uses that assessment. It does not request another model judgment.</p></div>
+        <div class="recovery-map">
+          <div class="recovery-origin"><span class="origin-label">Already completed</span><div class="origin-step"><span>OpenAI draft</span><span aria-hidden="true">✓</span></div><div class="origin-step"><span>Code validation</span><span aria-hidden="true">✓</span></div><div class="saved-anchor"><span class="saved-icon" aria-hidden="true">▤</span><h3>Saved assessment</h3><p>Checked excerpts, rubric points,<br>source and assessment identity.</p></div></div>
+          <div class="recovery-route"><div class="route-line" aria-hidden="true"></div><div class="interruption-mark"><span aria-hidden="true">!</span><strong>Publication interrupted</strong><p>Resolve the output failure,<br>then retry the scan.</p></div><p class="retry-label">Reuse the matching assessment</p></div>
+          <div class="recovery-destination"><div class="output-pair"><div class="mini-document"><span class="doc-icon">D</span><strong>Google Doc</strong><p>Draft report + quotations</p></div><div class="mini-document sheet-mini"><span class="doc-icon">S</span><strong>Google Sheet</strong><p>Draft + criterion columns</p></div></div><div class="review-hand-off"><span aria-hidden="true">↳</span><strong>Human review follows publication.</strong></div></div>
+        </div>
+        <div class="recovery-footnote"><strong>Keep the same Google destinations.</strong> Publication retries validate the saved checkpoint and reconcile existing outputs by assessment key. They do not require the original transcript or matching current rubric/model settings. This illustration does not connect to any account.</div>
+      </section>
+
+      <section id="view-business" class="view-panel alternate-panel" role="tabpanel" aria-labelledby="tab-business" hidden>
+        <div class="panel-heading"><div><p class="section-kicker">Buyer-operated source kit</p><h2>Automate the preparation.<br>Own the review.</h2></div><p>For teams that need repeatable conversation QA drafts with visible excerpts and criterion-level records. Account setup and rubric calibration belong to the buyer.</p></div>
+        <div class="business-map">
+          <section class="business-column buyer-column"><span class="map-heading">You supply</span><h3>A clear standard<br>and authorized inputs.</h3><ul><li>Custom criteria, labels and points</li><li>The exact subject speaker label</li><li>Eligible Zoom transcript access</li><li>OpenAI and Google credentials</li><li>Your Doc and Sheet destinations</li></ul></section>
+          <section class="business-column kit-column"><span class="map-heading">The v1 flow prepares</span><h3>A traceable draft<br>for every eligible source.</h3><ul><li>An OpenAI criterion draft</li><li>Exact quote and speaker checks</li><li>Label validation and code-calculated points</li><li>A saved validated assessment</li><li>Google Doc and Sheet draft outputs</li></ul><span class="kit-footnote">Schedule through the included inactive n8n workflow after setup.</span></section>
+          <section class="business-column review-column"><span class="map-heading">Your reviewers decide</span><h3>Whether the evidence<br>supports the judgment.</h3><ul><li>Calibrate labels on reviewed examples</li><li>Check context and transcript quality</li><li>Resolve flagged or unscored criteria</li><li>Confirm the draft before acting</li></ul><p class="review-boundary">Conversation coaching and QA.<br>No automated employment or disciplinary decisions.</p></section>
+        </div>
+      </section>
+      <p class="visually-hidden" id="stage-announcement" aria-live="polite" aria-atomic="true"></p>
+      <noscript><p class="noscript-note">JavaScript enables the walkthrough and view controls. The first illustrated step is available above; no account connection is required.</p></noscript>
+    </main>
+    <footer class="page-footer"><p>Evidence QA v1 <span>·</span> Offline process illustration</p><p>Synthetic data. Draft judgments. Human review.</p></footer>
+  </div>
+</body>
+</html>

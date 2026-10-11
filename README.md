@@ -2,7 +2,7 @@
 
 ## Conversation Reviews with Checked Quotes
 
-![Evidence QA](docs/brand.jpg)
+![Evidence QA — Conversation reviews with checked quotes](docs/media/logo-lockup.jpg)
 
 Define your conversation review criteria. Get an AI draft with checked transcript excerpts, code-calculated points, separate coverage, and a Google report and Sheet row.
 
@@ -27,6 +27,12 @@ Submitted to Agensi on 11 October 2026 at **$59 one-time**. Marketplace status: 
 **Automation:** the complete paid source includes provider adapters, an authenticated local HTTP engine, local one-writer recovery state, a setup skill, tests, and an inactive n8n schedule. Configure your own accounts and complete a live smoke test before scheduling real work.
 
 ### See a concrete draft
+
+![Illustrated v1 workflow from rubric and transcript to checked excerpts, saved assessment, Google outputs and human review](docs/media/workflow-overview.jpg)
+
+[Explore the visual guide](docs/media.md) · [Open the offline interactive illustration](docs/media/workflow.html) · [Watch the process animation](docs/media/workflow-process.gif)
+
+The visuals explain the implemented v1 flow using fictional data. They include an evidence view, publication recovery and a business map. They are process illustrations, not a shipped reviewer application or proof of a live provider run. The interactive HTML opens locally with no provider account; download this documentation repository and open `docs/media/workflow.html`. Motion starts paused, with keyboard controls and reduced-motion support.
 
 The fictional support example produces **5 points out of 5 assessed points, with 83.33% of the full rubric's 6-point weight covered**. Three criteria have checked excerpts. Visual attention remains unscored because the transcript cannot show it. Every output remains a draft for human review.
 
@@ -62,6 +68,8 @@ The offline demo in the paid kit needs no provider account or network access. Pr
 - [Storage, privacy and retention](docs/privacy.md)
 - [Support and version terms](docs/support.md)
 - [Improvement and extension plan](docs/roadmap.md)
+- [Workflow screenshots, animation and editable logo](docs/media.md)
+- [Business-value design, colors and accessibility notes](docs/visual-design.md)
 
 ### First edition and paid extensions
 
